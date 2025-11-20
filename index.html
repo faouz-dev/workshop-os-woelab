@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,6 +46,53 @@
                         <h3>Innovation</h3>
                         <p>Discover cutting-edge open source technologies</p>
                     </div>
+                </div>
+            </section>
+
+            <!-- SECTION CONTACT -->
+            <section id="contact" class="contact-section">
+                <div class="contact-inner">
+                    <div class="contact-info">
+                        <h2>Contactez-nous</h2>
+                        <p>Une question, une suggestion ou envie de contribuer ? Envoyez-nous un message — nous vous répondrons rapidement.</p>
+                        <ul class="contact-list">
+                            <li><strong>Adresse :</strong> Woelab, Lomé</li>
+                            <li><strong>Email :</strong> <a href="mailto:contact@woelab.example">contact@woelab.example</a></li>
+                        </ul>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <label for="name">Nom</label>
+                            <input id="name" name="name" type="text" required placeholder="Votre nom">
+                            <span class="error" data-for="name" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required placeholder="votre@email.com">
+                            <span class="error" data-for="email" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Écrivez votre message..."></textarea>
+                            <span class="error" data-for="message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit">Envoyer</button>
+                            <button class="btn btn-secondary" type="button" id="clearMessages">Effacer messages</button>
+                        </div>
+
+                        <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
+                    </form>
+
+                </div>
+
+                <div class="messages-panel">
+                    <h3>Messages récents</h3>
+                    <ul id="messagesList" class="messages-list" aria-live="polite"></ul>
                 </div>
             </section>
         </main>
